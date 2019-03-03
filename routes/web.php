@@ -11,16 +11,26 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 // Top page
-Route::get('/coin', 'CoinController@index');
-Route::get('/mypage',function(){
-    return view('page.index');
+Route::get('/', 'page.index');
+
+// blog
+Route::get('/blog', function(){
+  return view('blog');
 });
 
+// game
+Route::prefix('game')->group(function(){
+  Route::get('game', 'page.game');
+});
 
-Route::get('/test','CoinController@test');
+// service
+Route::prefix('service')->group(function(){
+    Route::get('coin', 'CoinController@index');
+});
+
 
