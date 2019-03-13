@@ -17,8 +17,9 @@
 
 // Top page
 Route::get('/', function(){
-  return  view('page.home.index');
+  return  view('page.index');
 });
+
 
 // blog
 Route::get('/blog', function(){

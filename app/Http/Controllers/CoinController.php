@@ -103,7 +103,7 @@ class CoinController extends Controller
 
         // from item box...
         // if you can, the method from itemtable is better.
-        $coin = $crawler->filter('div#itembox li')->each(
+        $coin = $crawler->filter('div#tw-item-box')->filter('li')->each(
                           function($node){
                                 if(preg_match("/coin/",$node->filter('a')->attr('href'))){
                                     return $node->filter('span')->html().PHP_EOL;
@@ -115,4 +115,5 @@ class CoinController extends Controller
     function array_last(array $array){
       return end($array);
     }
+
 }
