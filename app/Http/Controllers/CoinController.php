@@ -43,7 +43,7 @@ class CoinController extends Controller
           $allcoin = false;
           $detail = array();
         }
-          return view('page.index', compact('allcoin','detail'));
+          return view('page.service.coin', compact('allcoin','detail'));
     }
 
     public function test()

@@ -16,21 +16,24 @@
 //});
 
 // Top page
-Route::get('/', 'page.index');
+Route::get('/', function(){
+  return  view('page.home.index');
+});
 
 // blog
 Route::get('/blog', function(){
-  return view('blog');
+  return view('page.index');
 });
 
 // game
 Route::prefix('game')->group(function(){
-  Route::get('game', 'page.game');
+  Route::get('game', function(){
+    return view('page.index');
+  });
 });
 
 // service
 Route::prefix('service')->group(function(){
-    Route::get('coin', 'CoinController@index');
+  Route::get('coin','CoinController@index');
 });
-
 
