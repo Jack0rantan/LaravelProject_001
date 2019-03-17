@@ -35,6 +35,11 @@ Route::prefix('game')->group(function(){
 
 // service
 Route::prefix('service')->group(function(){
-  Route::get('coin','CoinController@index');
+  Route::get('coin',function(){
+    return view('page.service.coinInit');
+  });
+  Route::post('coin','CoinController@index');
 });
+
+
 

@@ -9,7 +9,7 @@ use Symfony\Component\DomCrawler\Crawler;
 class CoinController extends Controller
 {
     //
-    public function index()
+    public function index(Request $request)
     {
         // Initialize
         $id = 1;
@@ -19,9 +19,10 @@ class CoinController extends Controller
         $detail = array();
         $nextPage = array();
         $array= array();
+        $account = $request->tw_name;
 
         // getAllCoinは配列なのでストリングにする為に値が存在する要素で変数を作成する
-        foreach($this->getAllCoin('hyo_tam') as $coin){
+        foreach($this->getAllCoin($account) as $coin){
             if(isset($coin)){
                 $allcoin = $coin;
             }
@@ -30,7 +31,7 @@ class CoinController extends Controller
         // get Info per 1page
         if($allcoin){
           while ($countCoin < $allcoin){
-            $array = $this->getCoinDetail('hyo_tam', $page, $id);
+            $array = $this->getCoinDetail($account, $page, $id);
             $nextPage = $array['data'];
             $detail = array_merge($detail, $nextPage);
 
@@ -46,9 +47,9 @@ class CoinController extends Controller
           return view('page.service.coin', compact('allcoin','detail'));
     }
 
-    public function test()
+    public function test($account)
     {
-      foreach($this->getAllCoin('hyo_tam') as $coin) if(isset($coin)) $ans = $coin;
+      foreach($this->getAllCoin($account) as $coin) if(isset($coin)) $ans = $coin;
       echo $ans;
     }
 

@@ -17,7 +17,7 @@
 
 <!-- body -->
 <div class = "row" id = "content">
- @include ('layout.main', ['allcoin' => $allcoin, 'detail' => $detail ])
+ @include ('layout.main',['allcoin'=> 0, 'detail' => [0,0,0,0]])
 </div>
 
 @include ('layout.footer')
