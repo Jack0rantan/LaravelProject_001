@@ -9,7 +9,7 @@ use Symfony\Component\DomCrawler\Crawler;
 class CoinController extends Controller
 {
     //
-    public function index(Request $request)
+    public function index(Request $request,$name='')
     {
         // Initialize
         $id = 1;
@@ -19,7 +19,12 @@ class CoinController extends Controller
         $detail = array();
         $nextPage = array();
         $array= array();
-        $account = $request->tw_name;
+
+        if(!$name){
+          $account = $request->tw_name;
+        }else{
+          $account = $name;
+        }
 
         // getAllCoinは配列なのでストリングにする為に値が存在する要素で変数を作成する
         foreach($this->getAllCoin($account) as $coin){
@@ -44,7 +49,7 @@ class CoinController extends Controller
           $allcoin = false;
           $detail = array();
         }
-          return view('page.service.coin', compact('allcoin','detail'));
+          return view('page.service.coin', compact('allcoin','detail','account'));
     }
 
     public function test($account)
@@ -64,6 +69,10 @@ class CoinController extends Controller
         $data = array();
         $result = array();
 
+        $xprStr  = '';
+        $delStr1 = 'Expire Date';
+        $delStr2 = 'Left';
+
           // Get Data Source
           $crawler = $client->request('get',"https://twitcasting.tv/".$account."/gifts/".$page);
 
@@ -75,7 +84,8 @@ class CoinController extends Controller
                 $conBaku = preg_match("/baku/", $node->filter('td.item')->filter('a')->attr('href'));
                 if($conCoin) {
                   $data[$i]['id']     = $i + $id ;
-                  $data[$i]["xprDay"]   = $node->filter('td.item')->filter('div')->text();
+                    $xprStr   = str_replace('Expire Date','',$node->filter('td.item')->filter('div')->text());
+                  $data[$i]["xprDay"]   = str_replace('left','',$xprStr);
                   $data[$i]["coinUser"] = $node->filter('.user')->text();
                   $data[$i]["fullname"] = $node->filter('.fullname')->text();
                     if(preg_match("/Expired/i",$data[$i]["xprDay"])){
@@ -113,8 +123,5 @@ class CoinController extends Controller
         return $coin;
     }
 
-    function array_last(array $array){
-      return end($array);
-    }
 
 }

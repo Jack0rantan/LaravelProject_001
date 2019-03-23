@@ -2,9 +2,9 @@
 @extends ('layout.common')
 
 <!-- SEO -->
-@section ('title', 'CoinSearch')
-@section ('keywords','twicas, continue_coin, search')
-@section ('descriotion','twicasのコンティニューコインを調べるサイトです')
+@section ('title', 'yourCoin for TwiCas')
+@section ('keywords','twicas, continue_coin, アイテム, コイン, 枚数')
+@section ('descriotion','Twicasのコンティニューコインを調べるサイトです')
 
 <!-- head -->
 @include ('layout.google')
@@ -17,7 +17,7 @@
 
 <!-- body -->
 <div class = "row" id = "content">
- @include ('layout.main',['allcoin'=> 0, 'detail' => [0,0,0,0]])
+ @include ('layout.main',['allcoin'=> 0, 'detail' => [0,0,0,0], 'account'=> ''])
 </div>
 
 @include ('layout.footer')

@@ -2,7 +2,7 @@
 @extends ('layout.common')
 
 <!-- SEO -->
-@section ('title', 'CoinSearch')
+@section ('title', 'yourCoin for TwiCas')
 @section ('keywords','twicas, continue_coin, search')
 @section ('descriotion','twicasのコンティニューコインを調べるサイトです')
 
@@ -16,8 +16,6 @@
 @include ('layout.header')
 
 <!-- body -->
-<div class = "row" id = "content">
- @include ('layout.main', ['allcoin' => $allcoin, 'detail' => $detail ])
-</div>
+@include ('layout.main', ['allcoin' => $allcoin, 'detail' => $detail, 'account'=> $account ])
 
 @include ('layout.footer')
