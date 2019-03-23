@@ -9,7 +9,7 @@ use Symfony\Component\DomCrawler\Crawler;
 class CoinController extends Controller
 {
     //
-    public function index()
+    public function index(Request $request,$name='')
     {
         // Initialize
         $id = 1;
@@ -20,8 +20,14 @@ class CoinController extends Controller
         $nextPage = array();
         $array= array();
 
+        if(!$name){
+          $account = $request->tw_name;
+        }else{
+          $account = $name;
+        }
+
         // getAllCoinは配列なのでストリングにする為に値が存在する要素で変数を作成する
-        foreach($this->getAllCoin('hyo_tam') as $coin){
+        foreach($this->getAllCoin($account) as $coin){
             if(isset($coin)){
                 $allcoin = $coin;
             }
@@ -30,7 +36,7 @@ class CoinController extends Controller
         // get Info per 1page
         if($allcoin){
           while ($countCoin < $allcoin){
-            $array = $this->getCoinDetail('hyo_tam', $page, $id);
+            $array = $this->getCoinDetail($account, $page, $id);
             $nextPage = $array['data'];
             $detail = array_merge($detail, $nextPage);
 
@@ -43,12 +49,12 @@ class CoinController extends Controller
           $allcoin = false;
           $detail = array();
         }
-          return view('page.index', compact('allcoin','detail'));
+          return view('page.service.coin', compact('allcoin','detail','account'));
     }
 
-    public function test()
+    public function test($account)
     {
-      foreach($this->getAllCoin('hyo_tam') as $coin) if(isset($coin)) $ans = $coin;
+      foreach($this->getAllCoin($account) as $coin) if(isset($coin)) $ans = $coin;
       echo $ans;
     }
 
@@ -63,6 +69,10 @@ class CoinController extends Controller
         $data = array();
         $result = array();
 
+        $xprStr  = '';
+        $delStr1 = 'Expire Date';
+        $delStr2 = 'Left';
+
           // Get Data Source
           $crawler = $client->request('get',"https://twitcasting.tv/".$account."/gifts/".$page);
 
@@ -74,7 +84,8 @@ class CoinController extends Controller
                 $conBaku = preg_match("/baku/", $node->filter('td.item')->filter('a')->attr('href'));
                 if($conCoin) {
                   $data[$i]['id']     = $i + $id ;
-                  $data[$i]["xprDay"]   = $node->filter('td.item')->filter('div')->text();
+                    $xprStr   = str_replace('Expire Date','',$node->filter('td.item')->filter('div')->text());
+                  $data[$i]["xprDay"]   = str_replace('left','',$xprStr);
                   $data[$i]["coinUser"] = $node->filter('.user')->text();
                   $data[$i]["fullname"] = $node->filter('.fullname')->text();
                     if(preg_match("/Expired/i",$data[$i]["xprDay"])){
@@ -103,7 +114,7 @@ class CoinController extends Controller
 
         // from item box...
         // if you can, the method from itemtable is better.
-        $coin = $crawler->filter('div#itembox li')->each(
+        $coin = $crawler->filter('div#tw-item-box')->filter('li')->each(
                           function($node){
                                 if(preg_match("/coin/",$node->filter('a')->attr('href'))){
                                     return $node->filter('span')->html().PHP_EOL;
@@ -112,7 +123,5 @@ class CoinController extends Controller
         return $coin;
     }
 
-    function array_last(array $array){
-      return end($array);
-    }
+
 }

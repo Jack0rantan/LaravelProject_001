@@ -1,22 +1,22 @@
-@extends ('layout.common')
+<!-- template -->
+@extends ('layout.top.common')
 
-@section ('title', 'CoinSearch')
-@section ('keywords','twicas, continue_coin, search')
-@section ('descriotion','twicasのコンティニューコインを調べるサイトです')
+<!-- SEO -->
+@section ('title', 'DawnDesert')
+@section ('keywords','Web開発,Larabel,larabel,MySQL,副業,10万円,収益')
+@section ('descriotion','三ヶ月のWeb開発で月10万円収益Upの実績をもとに技術内容をシェアします。')
 
-
+<!-- head -->
+@include ('layout.google')
+@include ('layout.font')
 @include ('layout.head')
+
+<!-- header -->
+<!-- nav_var -->
 @include ('layout.header')
 
-<div class = "row" id = "content">
- @include ('layout.sub')
- @include ('layout.main', ['allcoin' => $allcoin, 'detail' => $detail ])
+<!-- body -->
+@include ('layout.top.main')
 
-  @php
-  exec('bin/phantomjs hello.js');
-  @endphp
-
-
-</div>
-
+<!-- footer -->
 @include ('layout.footer')
