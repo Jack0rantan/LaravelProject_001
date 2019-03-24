@@ -20,4 +20,5 @@
  @include ('layout.main',['allcoin'=> 0, 'detail' => [0,0,0,0], 'account'=> ''])
 </div>
 
+<!-- footer -->
 @include ('layout.footer')

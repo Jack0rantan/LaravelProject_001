@@ -9,11 +9,11 @@
                  background-repeat: no-repeat;
                  background-size:cover;">
       @yield ('header')
-    <div class = "container-fluid">
 
-        <div class = "main">
-          @yield ('main')
-        </div>
+    <!-- main -->
+      @yield ('main')
 
-    </div>
+    <!-- footer -->
+      @yield ('footer')
+
     </body>

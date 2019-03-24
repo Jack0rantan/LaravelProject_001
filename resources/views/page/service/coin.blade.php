@@ -18,4 +18,5 @@
 <!-- body -->
 @include ('layout.main', ['allcoin' => $allcoin, 'detail' => $detail, 'account'=> $account ])
 
+<!-- footer -->
 @include ('layout.footer')

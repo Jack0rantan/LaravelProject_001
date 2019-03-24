@@ -5,15 +5,15 @@
     </head>
 
     <body>
+
+    <!-- header -->
       @yield ('header')
-    <div class = "container-fluid">
 
-      <div class = "contents">
-        <div class = "main">
-          @yield ('main')
-        </div>
-      </div>
+    <!-- main -->
+      @yield ('main')
 
-    </div>
+
+    <!-- footer -->
+      @yield ('footer')
     </body>
   </html>
