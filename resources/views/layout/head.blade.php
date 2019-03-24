@@ -30,4 +30,10 @@
   <!-- font -->
   @yield ('font')
 
+
+
+
+<!--**************************************-->
+  <!-- Search Console -->
+  <meta name="google-site-verification" content="15XkPyjO6mBdC0XSNmjJMbFNTPls7RDjHLfiTibvS9Y" />
 @endsection
