@@ -1,23 +1,9 @@
 @section ('footer')
   <!-- grobal footerです -->
 
-  <div class="container-fluid">
-    <div class="row" style="background:linear-gradient(90deg,#aa4444,#aaaaaa)">
-
-
-
-
-    <p class="text-muted">
-       Please sticky footer content here. 
-    </p>
-
-
-
-
-
-
-
-
+  <footer class="footer">
+    <div class="conatiner-fluid">
+      <p> Copyright - Kazumasa Kan, 2019 All Rights Reserved. </p>
     </div>
-  </div>
+  </footer>
 @endsection

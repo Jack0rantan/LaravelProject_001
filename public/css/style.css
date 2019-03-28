@@ -228,11 +228,16 @@
     background-image: linear-gradient(113deg, rgba(207,188,188,1) 0%, rgba(185,208,231,1) 100%);
     background-repeat: no-repeat;
   }
-  #test {
-    font-size : 100px;
-    font-color : #ff0000;
+/* footer */
+  .footer {
+    font-size:13px;
+    position:absolute;
+    background:#050505;
+    color:white;
+    height:50px;
+    width:100%;
+    text-align:center;
   }
-
 
 
 /**************************/
