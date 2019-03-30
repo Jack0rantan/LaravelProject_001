@@ -192,26 +192,12 @@
     border-radius: 7px;
     transition: .4s;
   }
-  a {
-      text-decoration: none;
-  }
   .btn01:hover {
     background: #223344;
     color: white;
   }
-/* basic */
-  body {
-    background: rgb(207,188,188);
-    background-image: linear-gradient(113deg, rgba(207,188,188,1) 0%, rgba(185,208,231,1) 100%);
-    background-repeat: no-repeat;
-  }
-  .img {
-    text-align:center;
-    vartical-align:middle;
-    display:table-center;
-    layout-grid-line:200px;
-  }
 
+/*************************************************/
   /* prof */
   .profbox {
     background-image: linear-gradient(to top, #32323b, #322c32, #2e272a, #282323, #211f1e);
@@ -221,7 +207,7 @@
     border-radius : 10px;
     filter : drop-shadow(0px 0px 20px rgba(0,0,0,0.8));
   }
-  .profimg {
+  .profImg {
     height : auto;
     max-width : 60%;
     border-radius : 300%;
@@ -262,10 +248,52 @@
     margin-left : 5px;
   }
 /**************************/
+  .cardBack {
+    background-image: linear-gradient(-40deg, #0b152a, #212637, #363845, #4a4b53, #5f5f62);
+    color : white;
+    height : 275px;
+    max-width : 100%;
+    display : inline-block;
+    border-radius : 10px;
+    filter : drop-shadow(0px 0px 20px rgba(0,0,0,0.8));
+    text-align : left;
+    vertical-align : middle;
+    position : relative;
+  }
+  .cardImg {
+    height : auto;
+    max-width : 100%;
+    max-height: 200px;
+    min-height: 190px;
+  }
+  .cardTitle {
+    color : white;
+    margin-left : 20px;
+  }
+  .cardText {
+    font-size : 16px;
+    color : white;
+    vertical-align : middle;
+    margin-left : 20px;
+    margin-top : 3px;
+  }
+/**************************/
+  /* basic */
+  body {
+    background: rgb(207,188,188);
+    background-image: linear-gradient(113deg, rgba(207,188,188,1) 0%, rgba(185,208,231,1) 100%);
+    background-repeat: no-repeat;
+  }
   .bdr {
     border : 0.4px solid;
     border-color : #aaaaff;
     max-width : 100%;
     margin-right : 5vw;
     margin-left : 5vw;
+  }
+  .img {
+    text-align:center;
+    vartical-align:middle;
+    display:table-center;
+    layout-grid-line:200px;
   }

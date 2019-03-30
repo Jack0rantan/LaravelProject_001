@@ -13,7 +13,7 @@
 
             <!-- profile img -->
             <div class="img">
-              <img src="/img/profile002.jpg" alt="profile" class="profimg">
+              <img src="/img/profile002.jpg" alt="profile" class="profImg">
             </div>
 
             <!--  -->

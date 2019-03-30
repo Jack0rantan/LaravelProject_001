@@ -20,7 +20,7 @@
                    <h1 style="font-size:5vmin;">DawnDesert</h1>
                     <div class="font-Unna" style="color:white">
                       <h2 style="font-size:3.5vmin; padding-left:2vmin"> Enhance your life.</h2>
-                      <h3 style="font-size:3vmin; padding-right:4vmin; padding-left:3vw">
+                      <h3 style="font-size: 2vmin; padding-right:4vmin; padding-left:3vw">
                           <p> I will provide some services and information to make your life more convinient.</p>
                           <p> If it's worthful for you, giving hope such as the dawn in the desert, I'm happy. </p>
                       </h3>
@@ -49,24 +49,18 @@
           <!-- 記事一覧 -->
           <!-- 変数定義 -->
           <div class="row">
-            @php $count = 1; @endphp
-            <!-- 繰り返し処理 -->
             @foreach ( $result->all() as $blogOutline)
-              <div class="col-sm-6">
-                <div class="card border-0">
-                  <img src="/img/dawn_desert_002.jpg" class="card-img-top img-fluid" alt="[GET Picture]">
-                  <div class="card-body" style="background:black">
-                    <div class="card-title font-Noto" style="color:white;">{{$blogOutline->title}} </div>
-                    <p class="card-text" style="color:white;">{{$blogOutline->outline}}</p>
+              <div class="col-sm-6 col-8">
+                <div class="cardBack">
+                  <div class="cardTitle">{{$blogOutline->title}}</div>
+                  <div class="img">
+                    <img src="/img/dawn_desert_002.jpg" class="cardImg" alt="Article Picture">
                   </div>
+                    <div class="cardText">{{$blogOutline->outline}}</div>
+                    <div class="cardText">{{$blogOutline->outline}}</div>
                 </div>
+                <div class="margin004"></div>
               </div>
-              <!-- 2つの記事ごとにマージンを追加 -->
-              @if ($count%2 == 0)
-              <div class="col-sm-12"><div class="margin001"></div></div>
-              @endif
-              <!-- count -->
-              @php $count += 1; @endphp
             @endforeach
           </div>
 
@@ -79,7 +73,7 @@
 
           <!-- contents  -->
           <div class="col-sm-12">
-            <div class="box002"></div>
+            <div class="margin004"></div>
           </div>
 
         </div>
