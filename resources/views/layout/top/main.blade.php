@@ -53,7 +53,7 @@
             <!-- 繰り返し処理 -->
             @foreach ( $result->all() as $blogOutline)
               <div class="col-sm-6">
-                <div class="card border-0" >
+                <div class="card border-0">
                   <img src="/img/dawn_desert_002.jpg" class="card-img-top img-fluid" alt="[GET Picture]">
                   <div class="card-body" style="background:black">
                     <div class="card-title font-Noto" style="color:white;">{{$blogOutline->title}} </div>

@@ -17,6 +17,8 @@
 
 <!-- body -->
 @include ('layout.top.main')
+@include ('layout.side')
+
 
 <!-- footer -->
 @include ('layout.footer')

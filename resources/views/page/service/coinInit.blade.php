@@ -17,8 +17,9 @@
 
 <!-- body -->
 <div class = "row" id = "content">
- @include ('layout.main',['allcoin'=> 0, 'detail' => [0,0,0,0], 'account'=> ''])
+  @include ('layout.main',['allcoin'=> 0, 'detail' => [0,0,0,0], 'account'=> ''])
 </div>
+  @include ('layout.side')
 
 <!-- footer -->
 @include ('layout.footer')

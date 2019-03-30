@@ -1,7 +1,7 @@
 @section ('header')
 
     <!-- header = navbar -->
-    <div class="container-fluid justify-content-between">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12">
            <div class="margin005"></div>
@@ -9,26 +9,32 @@
       </div>
       <div class="row">
         <div class="col-sm-12">
-          <nav class="navbar fixed-top navbar-light border-0" style="background:rgba(20,20,20,0.7)">
-                <!--div class="navbar-header">
-
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarEexample2">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="/">
-                      <img alt="Brand" src="/img/dawn-san.jpg" style="height: 30px;">
-                  </a>
-
-                </div-->
-                <ul class="nav font-Fjalla" style="font-size:20px">
-                  <li class="nav-item nav-link link"><a href="/" style="font-size:3vw; color:white; text-decoration:none;">TopPage</a></li>
-                  <li class="nav-item nav-link link"><a href="/blog" style="font-size:3vw; color:white; text-decoration:none;">blog</a></li>
-                  <li class="nav-item nav-link link"><a href="/contact" style="font-size:3vw; color:white; text-decoration:none;">contact</a></li>
-                  <li class="nav-item nav-link link"><a href="/service/coin" style="font-size:3vw; color:white; text-decoration:none;">service</a></li>
+          <nav class="navbar fixed-top navbar-expand-md navbar-light border-0" style="background:rgba(20,20,20,0.8);">
+            <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#collapse-items"
+                    style="color:white;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="collapse-items">
+                <ul class="navbar-nav font-Fjalla">
+                  <li class="nav-item nav-link">
+                    <a class="nav-link" href="/">
+                      <div class="nav-text">TopPage</div>
+                    </a></li>
+                  <li class="nav-item nav-link">
+                    <a class="nav-link" href="/blog/portal">
+                      <div class="nav-text">blog</div>
+                    </a></li>
+                  <li class="nav-item nav-link">
+                    <a class="nav-link" href="/contact">
+                      <div class="nav-text">contact</div>
+                    </a></li>
+                  <li class="nav-item nav-link">
+                    <a class="nav-link" href="/service/coin">
+                      <div class="nav-text">service</div>
+                    </a></li>
                 </ul>
+            </div>
           </nav>
         </div>
       </div>
