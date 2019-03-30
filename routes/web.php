@@ -24,6 +24,11 @@ Route::get('/blog', function(){
   return view('page.blog.top');
 });
 
+// Contact
+Route::get('/contact', function(){
+  return view('page.contact');
+});
+
 // game
 Route::prefix('game')->group(function(){
   Route::get('game', function(){

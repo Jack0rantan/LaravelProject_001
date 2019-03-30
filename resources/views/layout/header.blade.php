@@ -22,7 +22,7 @@
                       <div class="nav-text">TopPage</div>
                     </a></li>
                   <li class="nav-item nav-link">
-                    <a class="nav-link" href="/blog/portal">
+                    <a class="nav-link" href="/blog">
                       <div class="nav-text">blog</div>
                     </a></li>
                   <li class="nav-item nav-link">
