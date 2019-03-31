@@ -9,7 +9,7 @@
       </div>
       <div class="row">
         <div class="col-sm-12">
-          <nav class="navbar fixed-top navbar-expand-md navbar-light border-0" style="background:rgba(20,20,20,0.8);">
+          <nav class="navbar fixed-top navbar-expand-md navbar-light border-0 p-1" style="background:rgba(10,10,10,0.8);">
             <button class="navbar-toggler" type="button"
                     data-toggle="collapse" data-target="#collapse-items"
                     style="color:white;">
