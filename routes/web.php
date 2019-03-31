@@ -26,13 +26,13 @@ Route::get('/blog', function(){
 
 // Contact
 Route::get('/contact', function(){
-  return view('page.contact');
+  return view('page.contact.top');
 });
 
 // game
 Route::prefix('game')->group(function(){
   Route::get('game', function(){
-    return view('page.game');
+    return view('page.game.top');
   });
 });
 

@@ -19,48 +19,66 @@
       <!-- Explanation -->
       <div class="col-sm-1"></div>
       <div class="col-sm-11">
-        <div class="font-Unna" style="font-size:25px">
-         <h2> This page count your own coin in TwiCas.</h2>
+        <div class="font-Unna">
+         <h2 style="margin-left:20px; font-size:25px"> TwiCasで獲得しているコインの期限を確認できます</h2>
         </div>
       </div>
 
       <!-- -->
+      <div class="margin003"></div>
+
+      <!-- -->
       <div class="col-sm-12">
-        <h3 class="font-DS" style="font-size:30px">1 Step :</h3>
+        <h3 class="font-DS" style="font-size:30px">1. アカウントの確認</h3>
       </div>
 
       <!-- -->
       <div class="row">
         <div class="col-sm-1"></div>
-        <div class="col-sm-6">
-          <p class="font-Unna" style="font-size:20px">please input your name</p>
+        <div class="col-sm-10">
+          <p class="font-Unna" style="font-size:20px">アカウントの名前を記入し"show"をクリックしましょう</p>
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-1"></div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-8">
           <form action="/service/coin" method="post">
           {{ csrf_field() }}
           <input type="text" name="tw_name" value="{{$account}}">
           <input type="submit" value="show" class="font-Unna">
           </form>
         </div>
+        <div class="col-sm-1"></div>
       </div>
 
       <!-- -->
+      <div class="margin003"></div>
+
+      <!-- -->
       <div class="col-sm-12">
-        <h3 class="font-DS" style="font-size:30px">2 Step :</h3>
+        <h3 class="font-DS" style="font-size:30px">2. コインの総数の確認 </h3>
       </div>
 
       <!-- form -->
       <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-6">
-         <p class="font-Unna" style="font-size:20px"> You have </p>
-        </div>
-        <div class="col-sm-3">
           <div class="font-Unna">
-            <span style="color:#ee3333; font-size:26px;">{{ $allcoin }}</span> <span style="font-size:20px;">coins</span>
+            <span style="font-size:20px">総数 : </span>
+            <span style="color:#ee3333; font-size:26px;">{{ $allcoin }}</span>
+            <span style="font-size:20px;">coins</span>
           </div>
         </div>
-        <div class="col-sm-2"></div>
+        <div class="col-sm-5"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-6">詳細は以下のリストで確認してください</div>
+        <div class="col-sm-5"></div>
       </div>
 
       <!-- margin -->

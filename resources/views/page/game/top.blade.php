@@ -2,10 +2,9 @@
 @extends ('layout.common')
 
 <!-- SEO -->
-@section ('title', '【コインの期限を確認！】your Coin【TwiCas】')
-@section ('keywords','TwiCas, コイン, 期限, 確認, アイテム')
-@section ('descriotion','TwiCasのコインの消費期限を調べます！')
-
+@section ('title', 'yourCoin for TwiCas')
+@section ('keywords','twicas, continue_coin, アイテム, コイン, 枚数')
+@section ('descriotion','Twicasのコンティニューコインを調べるサイトです')
 
 <!-- head -->
 @include ('layout.google')

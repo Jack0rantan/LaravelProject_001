@@ -21,17 +21,22 @@
               Kazumasa Kan
             </p>
 
-            <p style="color:#aaaaaa; font-size:13px;">
+            <p style="color:#444444; font-size:13px;">
               言語 : PHP Laravel JS<br>
               TOEIC : 755<br>
-              副業のみ+15万円達成<br>
+              価値あるサービスを提供します！<br>
             </p>
 
             <div class="bdr"></div>
 
+            <div class="margin003"></div>
+
           </div>
         </div>
       </div>
+    </div>
+    <div class="row">
+      <div class="margin003"></div>
     </div>
   </div>
 @endsection

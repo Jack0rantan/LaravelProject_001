@@ -17,13 +17,8 @@
           <div class="row">
             <div class="col-12">
                 <div class = "jumbotron jumbotron-fluid font-DS img_dawn000" style="color:white; padding-up:10px;padding-left:10px; filter:drop-shadow(10px 10px 10px rgba(0,0,0,0.6));">
-                   <h1 style="font-size:5vmin;">DawnDesert</h1>
+                   <h1 style="font-size:5vmin;">DawnDesertBlog</h1>
                     <div class="font-Unna" style="color:white">
-                      <h2 style="font-size:3.5vmin; padding-left:2vmin"> Enhance your life.</h2>
-                      <h3 style="font-size: 2vmin; padding-right:4vmin; padding-left:3vw">
-                          <p> I will provide some services and information to make your life more convinient.</p>
-                          <p> If it's worthful for you, giving hope such as the dawn in the desert, I'm happy. </p>
-                      </h3>
                 </div>
                 </div>
             </div>
@@ -36,7 +31,7 @@
 
           <!-- explanation -->
           <div class="col-sm-12">
-            <div class="font-DS" style="color:Black; font-size:20px">
+            <div class="font-DS" style="color:white; font-size:20px">
               <h2 style="font-size:7vh">Article</h2>
             </div>
           </div>
