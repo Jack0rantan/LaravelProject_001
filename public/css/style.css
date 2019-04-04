@@ -102,6 +102,11 @@
     background-size : cover;
     height:360px;
   }
+  .img_dawn001 {
+    background : url(/img/dawn_desert_001.jpg) center no-repeat;
+    background-size : cover;
+    height:170px;
+  }
 
   .fadeInTop {
     transform : translateY(20px);
@@ -235,8 +240,9 @@
     width:100%;
     text-align:center;
   }
+  /* header */
   /* navbar */
- /* navbar ハンバーガー三本線 */
+  /* navbar ハンバーガー三本線 */
   .navbar-toggler .navbar-toggler-icon {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
@@ -246,6 +252,21 @@
     text-decoration : none;
     margin-right : 5px;
     margin-left : 5px;
+  }
+  .dpLink {
+    color : white;
+  }
+  .nvDropMenu {
+    color : white;
+    background : rgba(40,40,40,1);
+    border : none;
+  }
+  .nvDrop {
+    background : rgba(0,0,0,0);
+    border : none;
+  }
+  .dropdown:hover #dropdownMenuButton {
+    background: rgba(255,0,0,1);
   }
 /**************************/
   .cardBack {
@@ -291,9 +312,29 @@
     margin-right : 5vw;
     margin-left : 5vw;
   }
+  .bdr001 {
+    border : 0.7px solid ;
+    border-color : #aa00aa;
+    max-width : 100%;
+    margin-right : 0;
+    margin-left : 0;
+  }
   .img {
     text-align:center;
     vartical-align:middle;
     display:table-center;
     layout-grid-line:200px;
+  }
+
+/***************/
+
+  .index {
+    background: rgb(212,223,249);
+    background: linear-gradient(207deg, rgba(212,223,249,1) 0%, rgba(255,214,250,1) 100%);
+    border : 1px solid;
+    width : 400px;
+  }
+  .indexTxt {
+    font-size : 20px;
+    text-align : center;
   }

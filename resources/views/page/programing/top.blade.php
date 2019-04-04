@@ -2,9 +2,9 @@
 @extends ('layout.common')
 
 <!-- SEO -->
-@section ('title', 'Blog Top page')
-@section ('keywords','Blog, PHP, Laravel')
-@section ('descriotion','DawnDesertのBlogです')
+@section ('title', 'Programing page')
+@section ('keywords','Laravel')
+@section ('descriotion','カテゴリーページです')
 
 <!-- head -->
 @include ('layout.google')
@@ -18,7 +18,7 @@
 <!-- body -->
 
   <!-- main -->
-  @include ('layout.blog.main')
+  @include ('layout.programing.main')
 
   <!-- side -->
   @include ('layout.side')

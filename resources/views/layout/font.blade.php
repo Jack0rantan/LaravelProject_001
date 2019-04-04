@@ -2,6 +2,19 @@
 <!--********************************************************************************************************************************-->
 <!-- web font -->
 
+<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" rel="stylesheet">
+<style>
+  .font-KosugiMaru{
+    font-family: 'Kosugi Maru', sans-serif;
+  }
+</style>
+
+ <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet" >
+<style>
+  .font-MPlus{
+    font-family: 'M PLUS 1p', sans-serif;
+  }
+</style>
  <link href="https://fonts.googleapis.com/css?family=Unna" rel="stylesheet">
 <style>
   .font-Unna{

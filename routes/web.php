@@ -11,39 +11,94 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-
-// Top page
+/**
+ *  @Top
+ */
 Route::get('/', 'showBlogController@index');
 
 
-// blog
-Route::get('/blog', function(){
-  return view('page.blog.top');
+/**
+ *  @Programing
+ */
+Route::prefix('programing')->group(function(){
+
+  /**
+   *  @ProgramingTop
+   */
+  Route::get('/', function(){
+    return view('page.programing.top');
+  });
+  /**
+   *  @laravel
+   */
+  Route::prefix('laravel')->group(function(){
+    /**
+     * @top
+     */
+    Route::get('/', function(){
+      return view('page.programing.laravel.top');
+    });
+    /**
+     *  @Article
+     */
+    Route::get('/{article}','showBlogController@showArticle');
+
+  });
 });
 
-// Contact
-Route::get('/contact', function(){
-  return view('page.contact.top');
+
+
+/**
+ *  @Contact
+ */
+Route::prefix('contact')->group(function(){
+
+  /**
+   *  @Top
+   */
+  Route::prefix('/')->group(function(){
+    return view('page.contact.top');
+  });
+
 });
 
-// game
+
+/**
+ *  @Game
+ */
 Route::prefix('game')->group(function(){
-  Route::get('game', function(){
+
+
+  /**
+   *  @Top
+   */
+  Route::get('/', function(){
     return view('page.game.top');
   });
+
+
 });
 
-// service
+
+
+/**
+ *  @Service
+ */
 Route::prefix('service')->group(function(){
-  Route::get('coin',function(){
-    return view('page.service.coinInit');
+
+  /**
+   *  @Coin
+   */
+  Route::prefix('coin')->group(function(){
+    // 初期画面
+    Route::get('/',function(){
+      return view('page.service.coinInit');
+    });
+    // 検索ボタンを押した時用
+    Route::post('/','CoinController@index');
+    // 簡易入力用
+    Route::get('/{name?}','CoinController@index');
+
   });
-  Route::post('coin','CoinController@index');
-  Route::get('coin/{name?}','CoinController@index');
 });
-
-
 

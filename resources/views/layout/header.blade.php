@@ -17,22 +17,61 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="collapse-items">
                 <ul class="navbar-nav font-Fjalla">
+
                   <li class="nav-item nav-link">
+
                     <a class="nav-link" href="/">
                       <div class="nav-text">TopPage</div>
                     </a></li>
+
+                  </li>
+<!-- drop nav -->
                   <li class="nav-item nav-link">
-                    <a class="nav-link" href="/blog">
-                      <div class="nav-text">blog</div>
+                    <div class="dropdown">
+                      <!-- 切替ボタンの設定 -->
+                      <button style="border:none; border-radius:0;" 
+                              type="button" 
+                              class="nvDrop btn btn-dark btn-lg dropdown-toggle" 
+                              id="dropdownMenuButton" 
+                              data-toggle="dropdown" 
+                              aria-haspopup="true" 
+                              aria-expanded="false">
+                        <span style="color:white">Programing</span>
+                      </button>
+                      <!-- ドロップメニューの設定 -->
+                      <div class="nvDropMenu dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dpLink dropdown-item" href="/programing/laravel">Laravel</a>
+                        <div class="bdr001"></div>
+                      </div>
+                    </div>
                     </a></li>
+<!-- -->
+<!-- drop nav -->
                   <li class="nav-item nav-link">
+                    <div class="dropdown">
+                      <!-- 切替ボタンの設定 -->
+                      <button style="border:none; border-radius:0;" 
+                              type="button" 
+                              class="nvDrop btn btn-dark btn-lg dropdown-toggle" 
+                              id="dropdownMenuButton" 
+                              data-toggle="dropdown" 
+                              aria-haspopup="true" 
+                              aria-expanded="false">
+                        <span style="color:white">Service</span>
+                      </button>
+                      <!-- ドロップメニューの設定 -->
+                      <div class="nvDropMenu dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dpLink dropdown-item" href="/service/coin">Coin</a>
+                        <div class="bdr001"></div>
+                      </div>
+                    </div>
+                    </a></li>
+<!-- -->
+                  <!-- Contact -->
+                  <!---li class="nav-item nav-link">
                     <a class="nav-link" href="/contact">
                       <div class="nav-text">contact</div>
-                    </a></li>
-                  <li class="nav-item nav-link">
-                    <a class="nav-link" href="/service/coin">
-                      <div class="nav-text">service</div>
-                    </a></li>
+                    </a></li-->
                 </ul>
             </div>
           </nav>
