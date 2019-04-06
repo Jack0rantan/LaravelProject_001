@@ -50,20 +50,6 @@
     margin-left : 20px;
   }
 
-  .text15 {
-    font-size : 15px;
-    color : white;
-  }
-  .text30 {
-    font-size : 30px;
-    color : white;
-  }
-
-  .text-name {
-    font-size : 20px;
-    color : white;
-  }
-
   /* box */
   .box002 {
     background-color : black;
@@ -327,10 +313,10 @@
   }
 
 /***************/
-
+/* Article - index - */
   .index {
-    background: rgb(212,223,249);
-    background: linear-gradient(207deg, rgba(212,223,249,1) 0%, rgba(255,214,250,1) 100%);
+    background: rgb(188,208,254);
+    background: linear-gradient(207deg, rgba(188,208,254,1) 0%, rgba(236,241,252,1) 100%);
     border : 1px solid;
     width : 400px;
   }
@@ -338,3 +324,121 @@
     font-size : 20px;
     text-align : center;
   }
+
+/***************/
+/* Article - tag - */
+  .artTag1 {
+    height : 100px;
+    background : rgba(240,240,240,1);
+    padding : 30px 0em 0em 1em;
+    border-left:20px solid #aa1111;
+  }
+  .artTag2 {
+    height : 50px;
+    background : rgba(240,240,240,1);
+    margin-left : 50px;
+    padding : 10px 0em 0em 1em;
+    border-left:20px solid #1111aa;
+  }
+  .artTag3 {
+    color : black;
+    height : 50px;
+    background : #eeeeee;
+    padding : 5px 0em 0em 1em;
+    border-left:20px solid #00aa00;
+  }
+
+  .artTag2-t {
+      margin-left : 50px;
+      padding : 10px 0em 0em 1em;
+      
+    }
+  .artItem {
+    font-size : 1.2em;
+    margin-top : 7px;
+    margin-bottom : 3px;
+    margin-left : 20px;
+  }
+
+/* Article - Highlight - */
+  .HL {
+    font-size : 24px;
+    margin-left : 20px;
+  }
+  .HLtxt {
+    color : #ff4400;
+    font-size : 1.2em;
+  }
+  .HLtxt2 {
+    color : #ff4400;
+    font-size : 1.1em;
+  }
+  .LL {
+    font-size : 15px;
+    margin-left : 40px;
+    margin-top : 5px;
+    margin-bottom : 5px;
+  }
+  .EX {
+    font-size : 20px;
+    margin-left : 60px;
+    margin-top : 10px;
+    margin-bottom : 10px;
+  }
+  .EX1 {
+    font-size : 20px;
+    margin-left : 60px;
+    margin-bottom : 10px;
+  }
+
+/* Article - code - */
+  /* for code-prettyfy */
+  .prettyprint ol.linenums > li
+  {
+    list-style-type: decimal;
+  }
+
+  /* for code like Qitta */
+  ol.code-writer
+   { /* クラス名は任意（以下同）*/
+    position:relative;
+    margin-left: 0px;
+    padding:30px 20px 10px 45px;
+    border:none;
+    background:#2F3437;
+  }
+  ol.code-writer:after
+  { /* 左上のラベル部分 */
+    position: absolute;
+    font-family: FontAwesome,'Quicksand','Avenir','Arial',sans-serif;
+    content: '\121 code'; /* f121はアイコンの番号 */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 5px 10px;
+    background: #969998;
+    line-height: 1;
+    font-size: 0.9em;
+    color: #fff;
+  }
+
+  ol.code-writer li
+  { /* 行番号とコードの間のライン */
+    padding-left:15px;
+    border-left:1.5px solid #000000;
+    color: #fff;
+  }
+
+/***************/
+/***************/
+/***************/
+/***************/
+
+
+
+/***************/
+
+
+/***************/
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/***************/
