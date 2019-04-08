@@ -16,6 +16,18 @@
  */
 Route::get('/', 'showBlogController@index');
 
+/**
+ *  @Policy
+ */
+Route::get('/about', function(){
+    return view('page.about.about');
+});
+Route::get('/privacy', function(){
+    return view('page.privacy.privacy');
+});
+Route::get('/terms', function(){
+    return view('page.terms.terms');
+});
 
 /**
  *  @Programing

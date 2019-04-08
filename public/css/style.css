@@ -222,7 +222,7 @@
     position:absolute;
     background:#050505;
     color:white;
-    height:50px;
+    height:100px;
     width:100%;
     text-align:center;
   }
@@ -311,7 +311,13 @@
     display:table-center;
     layout-grid-line:200px;
   }
-
+  /* li */
+  li {
+    list-style-position : outside;
+  }
+  .liDec {
+    list-style-type:decimal;
+  }
 /***************/
 /* Article - index - */
   .index {
@@ -351,8 +357,7 @@
   .artTag2-t {
       margin-left : 50px;
       padding : 10px 0em 0em 1em;
-      
-    }
+  }
   .artItem {
     font-size : 1.2em;
     margin-top : 7px;

@@ -19,7 +19,6 @@
           <div class="row">
             <div class="col-12">
                <h1 style="font-size:5vmin;" class="font-Sawarabi">Middleware -基礎-</h1>
-               <h2> </h2>
             </div>
           </div>
 
@@ -55,10 +54,10 @@
 
           <h3 class="artTag2">1-1. 目的</h3>
           <div class="artTag2-t">
-            <span class="HLtxt">事前or直前 に処理する内容の統一化が図れます</span><br>
-            <span class="">これによってコントローラの内部の処理で事前に準備するなどの処理が不要となるため、<br>
+            <span class="HLtxt">フォームリクエスト前後の処理を統一</span>します。<br>
+            <span class="">これによりコントローラの内部の処理で事前に準備するなどの処理が不要となるため、<br>
             <u>コントローラのビジネスロジックを明確化</u></span>できます。<br>
-            コントローラで一々その処理に通すための記載をする必要がないのです。
+            コントローラ内部にサニタイズなどの一般的な処理を記載をする必要がなくなるわけです。
 
           </div>
           <div class="margin002"></div>
@@ -67,20 +66,16 @@
           <p class="artTag2-t">
             あくまで代表例ではありますが、middleware は 大別し<span class="HLtxt2">２通りの使い方</span>が可能です。<br>
             <span class="artItem">① フィルタリング</span><br>
-           <span class="EX">ex ) 認証・Validation </span><br>
-           <span class="artItem">② 情報の追加・修正</span><br>
-          <span class="EX">ex )  暗号化・</span><br>
-
-
-
-           </p>
+            <span class="EX">ex ) 認証・Validation </span><br>
+            <span class="artItem">② 情報の追加・修正</span><br>
+            <span class="EX">ex )  暗号化・</span><br>
+          </p>
 
 <div class="margin002"></div>
 
 <!-- 2 -->
         <h2 class="artTag1"> 2. middlewareの作成・登録 </h2>
 
-<div class="margin002"></div>
           <h3 class="artTag2">2-1. 作成</h3>
           <div class="artTag2-t">
           artisanコマンドで実行可能です<br>
@@ -106,14 +101,26 @@ class HelloMiddleware
     }
 }
 </code></pre>
-  このhandleメソッドが middlewareの処理になります<br>
-  $next( )はクロージャです。ビジネスロジックを表現した関数と考えると良いでしょう。<br>
+  このhandleメソッドが middleware の処理になります<br>
+  $next( )はClosureクラスのインスタンスです。リクエストに応じたビジネスロジック部分を示す関数だと考えると良いでしょう。<br>
+  ゆえにビジネスロジックの前に処理したければ$nextの前に処理し(before middleware)<br>
 
-  ゆえに事前に処理したければ$nextの前に処理し、<br>
-  事後に処理したければ$nextの処理した値をreturnで返却すれば良いわけです。<br>
+  <pre class="prettyprint linenums:9"><code>public function handle($request, Closure $next)
+{
+    // 処理
+    return $next($request);
+}
+</code></pre>
 
 
+  ビジネスロジックの後に処理したければ$next()の処理した値を何かしら処理し、returnで返却すれば良いわけです。(after middleware)<br>
 
+  <pre class="prettyprint linenums:9"><code>public function handle($request, Closure $next)
+{
+    $response = $next($request);
+    // 処理
+    return $response;
+}</code></pre>
 </div>
 <div class="margin002"></div>
 
@@ -178,7 +185,7 @@ class Kernel extends HttpKernel
 プロパティ $middlewareGroups に登録するのがルートミドルウェアとなります。<br>
 また ※１ のように連想配列でミドルウェアを独自にグループにまとめることが可能です。<br>
 他に ※２ で優先度あげたいmiddlewareはここに記載することで先行して実行させることが可能です。<br>
-例えば、まず先に暗号化したい、認証に通して弾くものは弾いてから処理に移したいなどが考えられます。
+例えば、まず先にサニタイズし弾くものは弾いてから処理に移したいなどが考えられます。
 
 </div>
 <div class="margin002"></div>
@@ -187,7 +194,7 @@ class Kernel extends HttpKernel
           <h2 class="artTag1"> 3. まとめ </h2>
               <div class="artTag2-t">
 今回は middlewareについて丁寧に解説をしました。<br>
-middlewarenの役割から作成・登録と非常に基礎的な内容になりました。
+middlewarenの役割から作成・登録と非常に基礎的な内容になりました。<br>
 次回、ここで書ききれなかった 事前に用意されているmiddlewareの解説、またチュートリアルを記事にしたいと思います。<br>
 
 
