@@ -7,6 +7,7 @@
 @section ('descriotion','TwiCasのコインの消費期限を調べます！')
 
 <!-- head -->
+@include ('layout.adsense')
 @include ('layout.google')
 @include ('layout.font')
 @include ('layout.head')
