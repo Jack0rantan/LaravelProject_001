@@ -7,9 +7,11 @@
 @section ('descriotion','Laravelでmiddlewareを利用する方法について説明します。')
 
 <!-- head -->
+@include ('layout.adsense')
 @include ('layout.google')
 @include ('layout.font')
 @include ('layout.head')
+
 
 <!-- header -->
 <!-- nav_var -->
