@@ -12,18 +12,18 @@
       </div>
 
       <div class="margin002 col-12 row"></div>
-      <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-2">
+
+      <div style="padding-left:43vw">
+        <div class="col-12 row">
          <a href="/about" class="nav-link ">このサイトについて</a>
         </div>
-        <div class="col-sm-2">
+
+        <div class="col-12 row">
          <a href="/privacy" class="nav-link">プライバシーポリシー</a>
         </div>
-        <div class="col-sm-2">
+
+        <div class="col-12 row">
          <a href="/terms" class="nav-link">利用規約</a>
-        </div>
-        <div class="col-sm-3">
         </div>
       </div>
 
