@@ -26,9 +26,16 @@ class showBlogController extends Controller
         return view('page/index', compact('result'));
     }
 
-    public function showArticle($article)
+    public function showLaravelArticle($article)
     {
         $url = 'page/programing/laravel/'.$article;
+
+        return view($url);
+    }
+
+    public function showEnglishArticle($article)
+    {
+        $url = 'page/english/'.$article;
 
         return view($url);
     }

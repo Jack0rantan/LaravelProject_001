@@ -68,10 +68,10 @@
                     </a></li>
 <!-- -->
                   <!-- Contact -->
-                  <!---li class="nav-item nav-link">
-                    <a class="nav-link" href="/contact">
-                      <div class="nav-text">contact</div>
-                    </a></li-->
+                  <li class="nav-item nav-link">
+                    <a class="nav-link" href="/english">
+                      <div class="nav-text">English</div>
+                    </a></li>
                 </ul>
             </div>
           </nav>

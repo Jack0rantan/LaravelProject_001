@@ -53,7 +53,7 @@ Route::prefix('programing')->group(function(){
     /**
      *  @Article
      */
-    Route::get('/{article}','showBlogController@showArticle');
+    Route::get('/{article}','showBlogController@showLaravelArticle');
 
   });
 });
@@ -66,28 +66,39 @@ Route::prefix('programing')->group(function(){
 Route::prefix('contact')->group(function(){
 
   /**
-   *  @Top
+   *  @Top - @Category
    */
   Route::prefix('/')->group(function(){
     return view('page.contact.top');
   });
 
+    /**
+     *  @Article
+     */
+    Route::get('/{article}','showBlogController@showLaravelArticle');
+
 });
 
 
 /**
- *  @Game
+ *  @Enlglish
  */
-Route::prefix('game')->group(function(){
-
+Route::prefix('english')->group(function(){
 
   /**
    *  @Top
    */
   Route::get('/', function(){
-    return view('page.game.top');
+    return view('page.english.top');
   });
 
+    /**
+     *  @Article
+     */
+  Route::get('/{article}', function($article){
+    $url = "page.english.".$article;
+    return view ($url);
+  });
 
 });
 
