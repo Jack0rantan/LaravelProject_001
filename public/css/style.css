@@ -93,7 +93,13 @@
     background-size : cover;
     height:170px;
   }
-
+  .img-responsive {
+    position:relative;
+    height:auto;
+    width:auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
   .fadeInTop {
     transform : translateY(20px);
     transition : all 1s;
@@ -321,8 +327,7 @@
 /***************/
 /* Article - index - */
   .index {
-    background: rgb(188,208,254);
-    background: linear-gradient(207deg, rgba(188,208,254,1) 0%, rgba(236,241,252,1) 100%);
+    background: rgb(250,250,254);
     border : 1px solid;
     width : 400px;
   }
@@ -355,8 +360,13 @@
   }
 
   .artTag2-t {
-      margin-left : 50px;
-      padding : 10px 0em 0em 1em;
+    margin-left : 50px;
+    padding : 10px 0em 0em 1em;
+  }
+  .artTag3-t {
+    font-size : 18px;
+    margin-left : 50px;
+    padding : 10px 0em 0em 1em;
   }
   .artItem {
     font-size : 1.2em;
@@ -435,6 +445,13 @@
   }
 
 /***************/
+/*  flex box   */
+/***************/
+  .FB{
+    display:flex;
+    }
+
+
 /***************/
 /***************/
 /***************/
