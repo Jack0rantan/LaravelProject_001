@@ -2,8 +2,8 @@
   <div class="container-fluid">
     <div id="relative z1">
       <!-- main -->
-      <div class="row" style="boz-sizing:border-box;">
-        <div class="col-12" style="background:white; margin:20px 20px 40px 20px;">
+      <div class="row">
+        <div class="col-12" style="background:white;">
 
           <!-- margin -->
           <div class="row">
@@ -34,7 +34,7 @@
           <div class="row">
 
               <div class="col-12">
-                <div class="card mb-3" style="max-width: 400px;">
+                <div class="card mb-3" style="max-width: 54em;">
                   <div class="row no-gutters">
                     <div class="cardConf col-md-4">
                       <a href="/english/english-movie-site">
@@ -55,7 +55,7 @@
               </div>
 
               <div class="col-12">
-                <div class="card mb-3" style="max-width: 900px;">
+                <div class="card mb-3" style="max-width: 54em;">
                   <div class="row no-gutters">
                     <div class="col-md-4">
                       <a href="/english/e-1">
@@ -76,7 +76,7 @@
               </div>
 
               <div class="col-12">
-                <div class="card mb-3" style="max-width: 900px;">
+                <div class="card mb-3" style="max-width: 54em;">
                   <div class="row no-gutters">
                     <div class="col-md-4">
                       <a href="/english/e-2">
@@ -97,7 +97,7 @@
               </div>
 
               <div class="col-12">
-                <div class="card mb-3" style="max-width: 900px;">
+                <div class="card mb-3" style="max-width: 54em;">
                   <div class="row no-gutters">
                     <div class="col-md-4">
                       <a href="/english/english-movie-site">
