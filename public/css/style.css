@@ -225,12 +225,12 @@
   /* footer */
   .footer {
     font-size:13px;
-    position:absolute;
     background:#050505;
     color:white;
     height:150px;
     width:100%;
     text-align:center;
+    box-sizing:border-box;
   }
   /* header */
   /* navbar */
@@ -290,12 +290,18 @@
     margin-left : 20px;
     margin-top : 3px;
   }
+  .cardConf {
+    display:table;
+    text-align:center;
+    vertical-align:middle;
+  }
 /**************************/
   /* basic */
   body {
     background: rgb(207,188,188);
     background-image: linear-gradient(113deg, rgba(207,188,188,1) 0%, rgba(185,208,231,1) 100%);
     background-repeat: no-repeat;
+    box-sizing : border-box;
   }
   .bdr {
     border : 0.7px solid;
@@ -313,7 +319,7 @@
   }
   .img {
     text-align:center;
-    vartical-align:middle;
+    vertical-align:middle;
     display:table-center;
     layout-grid-line:200px;
   }
