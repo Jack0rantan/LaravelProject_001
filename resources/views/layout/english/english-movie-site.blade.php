@@ -3,8 +3,7 @@
     <div id="relative z1">
       <!-- main -->
       <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-10">
+        <div class="col-sm-12" style="background:white; margin:20px 20px 20px 20px;">
 
           <!-- margin -->
           <div class="row">
@@ -16,7 +15,7 @@
           <!-- Title -->
           <div class="row">
             <div class="col-12">
-               <h1 style="font-size:5vmin;" class="font-Sawarabi">【厳選５選】おすすめ英語動画サイト【独学】</h1>
+               <h1 style="font-size:5vmin;" class="font-Sawarabi">【厳選５選】おすすめ英語動画サイト【独学応援】</h1>
             </div>
           </div>
 
@@ -30,7 +29,7 @@
 
           <!-- 概要 -->
           <div class="row">
-            <div> <!-- これはTopに書く内容かも -->
+            <div class="artTag2-t"> <!-- これはTopに書く内容かも -->
               <p>英語学習をある程度進めると、こんな疑問が生まれるのではないでしょうか？</p>
 
               <ul>
@@ -42,7 +41,8 @@
                 <div class="col-12 row"></div>
 
               <p>英語学習では”インプットした知識をいかにアウトプットするか”が重要である、が私の持論です。</p>
-              <p>上記のような悩みを持つ学生あるいは社会人の皆さんには是非とも以下で紹介するサイトを使って実践的な知識をインプットあるいはシャドーイングや暗唱をしてアウトプットするなどご活用いただき、スキルアップしてください。</p>
+              <p>上記のような悩みを持つ学生あるいは社会人の皆さんには是非とも以下で紹介するサイトを使って実践的な知識を</p>
+              <p>インプットあるいはシャドーイングや暗唱をしてアウトプットするなどご活用いただき、スキルアップしてください。</p>
               <p></p>
             </div>
           </div>
@@ -66,7 +66,7 @@
                 <ul style="list-style-type:none">
                   <li>   2-1. スクリプトを読む</li>
                   <li>   2-2. シャドーイング</li>
-                  <li>   2-3. 暗唱・独り言</li>
+                  <li>   2-3. アウトプットする</li>
                 </ul>
                 <li> 3. まとめ</li>
               </ul>
@@ -184,7 +184,7 @@
             <p>何かを学習するのに長けているサイトではないかもしれないがリアルな会話に身をおくことができ、友人関係も築ける可能性を秘めています。</p>
             <p>日本にいても海外の知り合いを作ってしまえば留学と大差ない環境まで持ち込むことも可能です。</p>
             <p>TVゲームだけではなく、スマホゲームやチェスなどのボードゲームもカテゴリされていて人口も多いため、何かしら興味のある分野を検索・閲覧してみるのも良いきっかけになるのではないでしょうか？</p>
-            <a href="https://www.happyon.jp/">Hulu</a>
+            <a href="https://www.twitch.tv/">Twitch</a>
             <div class="margin005 col-12 row"></div>
 
           </div>
@@ -228,7 +228,7 @@
             <div class="margin005 col-12 row"></div>
           </div>
 
-          <h3 class="artTag2">2-3. アウトプットする（暗唱・独り言・英会話など）</h3>
+          <h3 class="artTag2">2-3. アウトプットする</h3>
           <div class="artTag3-t">
             <p>最後に、上記で動画の内容を覚えたら暗唱したり、フレーズを抽出・あるいはその文章を独り言のようにつぶやくなどして知識をアウトプットしましょう。</p>
             <p>もちろん、英会話で実践するのも理想的です。</p>
@@ -250,7 +250,6 @@
           <div class="margin004 col-sm-12 row"></div>
 
         </div>
-        <div class="col-sm-1"></div>
       </div>
     </div>
   </div>
