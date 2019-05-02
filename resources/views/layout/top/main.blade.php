@@ -50,16 +50,25 @@
           <!-- 変数定義 -->
           <div class="row">
             @foreach ( $result->all() as $blogOutline)
-              <div class="col-sm-6 col-8">
-                <div class="cardBack">
-                  <div class="cardTitle">{{$blogOutline->title}}</div>
-                  <div class="img">
-                    <img src="/img/dawn_desert_002.jpg" class="cardImg" alt="Article Picture">
+              <div class="col-12">
+                <div class="card mb-3" style="max-width: 54em;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <a href="/english/TED-001">
+                        <img src="/img/dawn_desert_002.jpg" class="card-img" alt="TED-img">
+                      </a>
+                    </div>
+                    <div class="col-md-8" style="background:#eeeeee">
+                      <div class="card-body">
+                      <a href="/english/TED-001" style="text-decoration:none; color:black;">
+                        <h5 class="card-title" style="background:white; padding:20px">{{$blogOutline->title}}</h5>
+                      </a>
+                        <p class="card-text">{{$blogOutline->outline}}</p>
+                        <p class="card-text"><small class="text-muted">{{$blogOutline->outline}}</small></p>
+                      </div>
+                    </div>
                   </div>
-                    <div class="cardText">{{$blogOutline->outline}}</div>
-                    <div class="cardText">{{$blogOutline->outline}}</div>
                 </div>
-                <div class="margin004"></div>
               </div>
             @endforeach
           </div>
