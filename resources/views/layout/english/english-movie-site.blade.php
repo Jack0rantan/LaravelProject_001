@@ -82,7 +82,7 @@
 
           <div class="artTag3-t">
 
-            <img src="/img/English/TED_menu.png" alt="TED-image" class="img-responsive center-block">
+            <img src="/img/English/english-movie/TED_menu.png" alt="TED-image" class="img-responsive center-block">
 
             <div class="margin003 col-12 row"></div>
 
@@ -97,7 +97,7 @@
             <p>特にこのサイトが優れているのはスクリプトがどの記事に対しても用意されており、さらに動画のどこを再生しているかが明示的にわかるようになっています</p>
             <p>またカテゴリーや、動画の長さからも検索できるようになっており、</p>
             <p>例えば、短めの動画を見たいなあ、という際には durationから0~6を選択するといった検索も可能で、自分のニーズに合う動画を検索することが可能です。</p>
-            <img src="/img/English/TED_search.png" alt="TED-search-duration" class="img-responsive center-block">
+            <img src="/img/English/english-movie/TED_search.png" alt="TED-search-duration" class="img-responsive center-block">
 
             <a href="https://www.ted.com/#/">TED</a>
             <a href="https://www.ted.com/talks">TED Talks</a>
@@ -108,7 +108,7 @@
           <h3 class="artTag2">1-2. CNN</h3>
           <div class="artTag3-t">
 
-            <img src="/img/English/CNN_menu.png" alt="CNN-image" class="img-responsive center-block">
+            <img src="/img/English/english-movie/CNN_menu.png" alt="CNN-image" class="img-responsive center-block">
 
             <p>CNN : Cable News Netowrkの略称。</p>
             <p>何と言っても特徴は世界中のニュースを24時間放送していること。</p>
@@ -127,7 +127,7 @@
           <h3 class="artTag2">1-3. YouTube</h3>
           <div class="artTag3-t">
 
-            <img src="/img/English/YouTube.png" alt="YouTube-image" class="img-responsive center-block">
+            <img src="/img/English/english-movie/YouTube.png" alt="YouTube-image" class="img-responsive center-block">
 
             <div class="margin004 col-12 row"></div>
 
@@ -140,13 +140,13 @@
             <p>一つだけチップスを紹介したいと思います。</p>
             <p>Youtubeは通常地域が日本に設定されていますが、アメリカ版に変更可能です。</p>
             <p>1.page上部にある自分のアカウントアイコンをクリック。(以下でいう紫色の人)</p>
-            <img style="max-width:50%" src="/img/English/YouTube_location_3.png" alt="Youtube-locatino-config" class="img-responsive center-block">
+            <img style="max-width:50%" src="/img/English/english-movie/YouTube_location_3.png" alt="Youtube-locatino-config" class="img-responsive center-block">
             <div class="margin002 col-12 row"></div>
             <p>2."場所：日本" を選択</p>
-            <img style="max-width:50%" src="/img/English/YouTube_location_1.png" alt="Youtube-location-config" class="img-responsive center-block">
+            <img style="max-width:50%" src="/img/English/english-movie/YouTube_location_1.png" alt="Youtube-location-config" class="img-responsive center-block">
             <div class="margin002 col-12 row"></div>
             <p>3. "アメリカ"を選択</p>
-            <img style="max-width:50%" src="/img/English/YouTube_location_2.png" alt="Youtube-location-config" class="img-responsive center-block">
+            <img style="max-width:50%" src="/img/English/english-movie/YouTube_location_2.png" alt="Youtube-location-config" class="img-responsive center-block">
             <div class="margin002 col-12 row"></div>
             <p>これだけでアメリカ版で検索することが可能です。急上昇を見るとその地域における流行などを知ることができるでしょう。</p>
 
@@ -158,7 +158,7 @@
           <h3 class="artTag2">1-4. Hulu</h3>
           <div class="artTag3-t">
 
-            <img src="/img/English/Hulu.png" alt="Hulu-image" class="img-responsive center-block">
+            <img src="/img/English/english-movie/Hulu.png" alt="Hulu-image" class="img-responsive center-block">
 
             <p>海外のドラマを英語字幕付きで見ることができる動画配信サービス、Hulu。</p>
             <p>ここまで紹介してきたサイトと違い有料ではある点がネックではあります、、が！</p>
@@ -177,7 +177,7 @@
           <h3 class="artTag2">1-5. Twitch</h3>
           <div class="artTag3-t">
 
-            <img src="/img/English/Twitch.png" alt="Twitch-image" class="img-responsive center-block">
+            <img src="/img/English/english-movie/Twitch.png" alt="Twitch-image" class="img-responsive center-block">
 
             <p>海外ゲーマ御用たちの動画配信サイト、Twitch。</p>
             <p>YouTubeとは違いオンタイムに海外の配信者が言葉を発しているので、英会話をチャットやスカイプなどのサービスを通じて英会話することも可能です。</p>
@@ -207,7 +207,7 @@
             <p>シャドーイングでよくわからない単語などがある場合には字幕をつけて、聞き取りながら発生し、再度シャドーイングすると良いと思います。</p>
             <p>字幕は動画下部にある吹き出しマークをクリックし、Englishを選択することで見ることができます。</p>
             <p>日本語字幕をつけて意味を理解したい、という場合は日本語を。ただし動画によっては用意されていないケースもあるため視聴前にチェックしておきましょう。</p>
-            <img src="/img/English/TED_method_3.png" alt="Hulu-image" class="img-responsive center-block">
+            <img src="/img/English/english-movie/TED_method_3.png" alt="Hulu-image" class="img-responsive center-block">
             <div class="margin005 col-12 row"></div>
 
           </div>
@@ -219,11 +219,11 @@
             <p>動画は刻々とシーンが展開されるため、落ち着いて文章や文法、ストーリの前後関係を整理しにくい場合があるかもしれません。視聴しながら意味理解がスムーズに行くのであればそれに越したことはないのですが、そうもいかない場合は多々あると思います。</p>
             <p>その際はぜひスクリプトを参照し、辞書を引いたり、動画再生されると良いかと思います。</p>
             <p>では、スクリプトですが、動画下部の"Transcript"をクリックしましょう。</p>
-            <img src="/img/English/TED_method_1.png" alt="Hulu-image" class="img-responsive center-block">
+            <img src="/img/English/english-movie/TED_method_1.png" alt="Hulu-image" class="img-responsive center-block">
             <div class="margin003 col-12 row"></div>
 
             <p>すると以下のようにスクリプトが出てくると思います。動画を同時に視聴すると以下のように再生箇所がハイライトされるため、目で追いやすくなります。</p>
-            <img src="/img/English/TED_method_2.png" alt="Hulu-image" class="img-responsive center-block">
+            <img src="/img/English/english-movie/TED_method_2.png" alt="Hulu-image" class="img-responsive center-block">
 
             <div class="margin005 col-12 row"></div>
           </div>

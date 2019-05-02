@@ -451,11 +451,17 @@
   }
 
 /***************/
-/*  flex box   */
+/*  quote box   */
 /***************/
-  .FB{
-    display:flex;
-    }
+  .quote
+  {
+    border : 2px dotted;
+    border-color : black;
+    background : #dddddd;
+    max-width : 100%;
+    margin : 5px;
+    padding : 10px 20px 10px 20px;
+  }
 
 
 /***************/
