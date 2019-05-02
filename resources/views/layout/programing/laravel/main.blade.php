@@ -3,8 +3,7 @@
     <div id="relative z1">
       <!-- main -->
       <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-10">
+        <div class="col-12" style="background:white;">
 
           <!-- margin -->
           <div class="row">
@@ -29,35 +28,29 @@
 
           <!-- 記事一覧 -->
           <div class="row">
-            <div class="col-sm-12">
 
-              <div class="col-sm-6 col-8">
-                <div class="cardBack">
-                  <div class="cardTitle">2019/04/04</div>
-                  <div class="img">
-                    <a href="/programing/laravel/e-1">
-                      <img src="/img/dawn_desert_002.jpg" class="cardImg" alt="Article Picture">
+            <!-- article 001 -->
+            <div class="col-12">
+              <div class="card mb-3" style="max-width: 54em;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <a href="/english/TED-001">
+                      <img src="/img/Study-001.jpeg" class="card-img" alt="Study-img">
                     </a>
                   </div>
-                    <div class="cardText">Middleware</div>
-                    <div class="cardText">Middlwareに関して</div>
-                </div>
-                <div class="margin004"></div>
-              </div>
-
-              <div class="col-sm-6 col-8">
-                <div class="cardBack">
-                  <div class="cardTitle">Middleware</div>
-                  <div class="img">
-                    <img src="/img/dawn_desert_002.jpg" class="cardImg" alt="Article Picture">
+                  <div class="col-md-8" style="background:#eeeeee">
+                    <div class="card-body">
+                    <a href="/programing/laravel/e-1" style="text-decoration:none; color:black;">
+                      <h5 class="card-title" style="background:white; padding:20px">【Laravel 独学】Middleware. </h5>
+                    </a>
+                      <p class="card-text">Middlewareを扱います。</p>
+                      <p class="card-text"><small class="text-muted">2019/04/04</small></p>
+                    </div>
                   </div>
-                    <div class="cardText">Middleware</div>
-                    <div class="cardText">Middlware</div>
                 </div>
-                <div class="margin004"></div>
               </div>
-
             </div>
+
           </div>
 
           <!-- form -->
@@ -73,7 +66,6 @@
           </div>
 
         </div>
-        <div class="col-sm-1"></div>
       </div>
     </div>
   </div>
