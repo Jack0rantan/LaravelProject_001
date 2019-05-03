@@ -30,9 +30,10 @@
           <!-- 概要 -->
           <div class="row">
             <div style="margin:20px">
-              <img src="/img/English/TED-001/title.png" alt="TED-title-image" class="img-responsive center-block">
+              <img src="/img/English/TED-002/title.png" alt="TED-title-image" class="img-responsive center-block">
               <p>#002はGoogleの自動運転に携わる開発者による現在の開発状況の説明です。</p>
-              <p>ポイントは</p>
+              <p>Googleの自動運転での功績、また<a href="https://ja.wikipedia.org/wiki/%E3%82%BB%E3%83%90%E3%82%B9%E3%83%81%E3%82%A2%E3%83%B3%E3%83%BB%E3%82%B9%E3%83%A9%E3%83%B3">セバスチャン・スラン</a>の自動運転に懸ける想い、がポイントです。</p>
+              <p>英語学習としてはそこまで難しい表現はありません。高校１年生くらいなら読めると思います。</p>
               <p>リンクは<a href="https://www.ted.com/talks/sebastian_thrun_google_s_driverless_car/transcript#t-234865">こちら</a>になります。</p>
             </div>
           </div>

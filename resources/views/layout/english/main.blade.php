@@ -67,7 +67,7 @@
                       <a href="/english/TED-001" style="text-decoration:none; color:black;">
                         <h5 class="card-title" style="background:white; padding:20px">【独学】TEDで英語学習！#001. </h5>
                       </a>
-                        <p class="card-text">Making Maps to fight disaster, build economicsを扱います。</p>
+                        <p class="card-text">Google Mapsの被災地への貢献についてです。</p>
                         <p class="card-text"><small class="text-muted">2019/05/01</small></p>
                       </div>
                     </div>
@@ -88,7 +88,7 @@
                       <a href="/english/TED-002" style="text-decoration:none; color:black;">
                         <h5 class="card-title" style="background:white; padding:20px">【独学】TEDで英語学習！#002. </h5>
                       </a>
-                        <p class="card-text">Making Maps to fight disaster, build economicsを扱います。</p>
+                        <p class="card-text">Googleの機械学習についてのプレゼンです。</p>
                         <p class="card-text"><small class="text-muted">2019/05/03</small></p>
                       </div>
                     </div>
@@ -107,7 +107,7 @@
                     <div class="col-md-8" style="background:#eeeeee">
                       <div class="card-body">
                         <a href="/english/TED_003" style="text-decoration:none; color:black;">
-                          <h5 class="card-title" style="background:white;padding:20px"></h5>
+                          <h5 class="card-title" style="background:white;padding:20px">【独学】TEDで英語学習！#003. </h5>
                         </a>
                         <p class="card-text"></p>
                         <p class="card-text"><small class="text-muted">2019/05/03</small></p>

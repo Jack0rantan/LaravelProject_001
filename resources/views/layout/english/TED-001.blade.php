@@ -10,7 +10,7 @@
             <div class="col-sm-12">
               <div class="margin002"></div>
             </div>
-           </div>
+          </div>
 
           <!-- Title -->
           <div class="row">
