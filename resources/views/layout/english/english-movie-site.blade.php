@@ -3,7 +3,7 @@
     <div id="relative z1">
       <!-- main -->
       <div class="row">
-        <div class="col-sm-12" style="background:white; margin:20px 20px 20px 20px;">
+        <div class="col-sm-12">
 
           <!-- margin -->
           <div class="row">

@@ -2,9 +2,9 @@
 @extends ('layout.common')
 
 <!-- SEO -->
-@section ('title', '【独学】TEDで英語学習！#001')
+@section ('title', '【独学】TEDで英語学習！#002')
 @section ('keywords','英語勉強法,TED,独学,英語学習')
-@section ('descriotion','Googleのミャンマーにおける功績が紹介されていましたのでこちらを紹介します。')
+@section ('descriotion','#001 に続き、Googleに関連する動画を見つけたのでこちらを紹介したいと思います。')
 
 <!-- head -->
 @include ('layout.adsense')
@@ -19,7 +19,7 @@
 <!-- body -->
 
   <!-- main -->
-  @include ('layout.english.TED-001')
+  @include ('layout.english.TED-002')
 
   <!-- side -->
   @include ('layout.side')
