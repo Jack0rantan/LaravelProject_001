@@ -43,7 +43,6 @@
     height: auto;
     filter:drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
   }
-
   .title001 {
     font-size : 100px;
     color : white;
@@ -168,14 +167,15 @@
     height : 18vmin;
     width : 10vh;
   }
+  .margin006 {
+    opacity : 0;
+    height : 5px;
+    width : 1px;
+  }
 
 
 /* notice */
   .notice {
-    background : linear-gradient(-32deg,rgba(0,0,100,0.7), rgba(100,0,30,0.6));
-    height : 700px;
-    width  : 390px;
-    filter : drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
   }
 
 /* button */
@@ -196,33 +196,40 @@
 
 /*************************************************/
   /* prof */
-  .profbox {
-    background-image: linear-gradient(to top, #32323b, #322c32, #2e272a, #282323, #211f1e);
-    height : 80vh;
+  .profBox {
     max-width : 100%;
     display : flex;
     border-radius : 10px;
-    filter : drop-shadow(0px 0px 20px rgba(0,0,0,0.8));
+    padding : 15px 15px 0 15px;
+    font-size : 14px;
+    flex-wrap : wrap;
+    text-align : left;
+  }
+  .profTitle {
+    font-size : 20px;
+    padding-top:10px;
+  }
+  .profText {
+    font-size : 14px;
   }
   .profImg {
     height : auto;
-    max-width : 60%;
+    width : 150px;
     border-radius : 300%;
     max-height: 400px
   }
   .sideBack {
-    background-image: linear-gradient(to right top, #d1d6e7, #cbd3e9, #c6cfeb, #bfccec, #b9c9ee);
+    background : #ffffff;
     color : Black;
-    height : 80vh;
-    max-width : 100%;
+    width : 300px;
     display : inline-block;
-    border-radius : 10px;
-    filter : drop-shadow(0px 0px 20px rgba(122,122,122,0.8));
-    text-align : center;
+    border : solid 1px #aaa;
     vertical-align : middle;
+    text-align : center;
   }
 
-  /* footer */
+
+/* footer */
   .footer {
     font-size:13px;
     background:#050505;
@@ -353,7 +360,6 @@
   .artTag2 {
     height : 50px;
     background : rgba(240,240,240,1);
-    margin-left : 50px;
     padding : 10px 0em 0em 1em;
     border-left:20px solid #1111aa;
   }
@@ -366,12 +372,10 @@
   }
 
   .artTag2-t {
-    margin-left : 50px;
     padding : 10px 0em 0em 1em;
   }
   .artTag3-t {
     font-size : 18px;
-    margin-left : 50px;
     padding : 10px 0em 0em 1em;
   }
   .artItem {
@@ -380,6 +384,39 @@
     margin-bottom : 3px;
     margin-left : 20px;
   }
+
+  /**
+   *  Screen幅が ４８０ 以下の時、
+   */
+@media screen and (max-width: 600px) {
+  .artTag1 {
+    font-size : 20px;
+    padding : 14px 0em 0em 1em;
+    height : 50px;
+  }
+  .artTag2 {
+    font-size : 18px;
+    padding : 5px 0em 0em 1em;
+    height : 30px;
+  }
+  .artTag3 {
+    font-size : 18px;
+  }
+  .artTag2-t {
+    font-size : 18px;
+  }
+  .artTag3-t {
+    font-size : 18px;
+  }
+  .artItem {
+    font-size : 18px;
+  }
+  .title {
+    font-size : 20px;
+  }
+}
+
+
 
 /* Article - Highlight - */
   .HL {
@@ -471,7 +508,6 @@
 
 
 /***************/
-
 
 /***************/
 /*-----------------------------------------------------------------------------------------------------------------------------------*/

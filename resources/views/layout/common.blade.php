@@ -12,17 +12,19 @@
     <!-- body -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-9 col-11">
+        <div class="col-lg-8 col-12">
 
           <!-- main -->
           @yield ('main')
 
+        <div class="margin004 col1-12 row"></div>
         </div>
-        <div class="col-lg-3 col-12">
+        <div class="col-lg-4 col-12">
 
           <!-- side -->
           @yield ('side')
 
+        <div class="margin004 col1-12 row"></div>
         </div>
       </div>
     </div>

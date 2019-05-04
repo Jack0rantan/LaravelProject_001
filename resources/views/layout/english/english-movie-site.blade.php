@@ -15,7 +15,7 @@
           <!-- Title -->
           <div class="row">
             <div class="col-12">
-               <h1 style="font-size:5vmin;" class="font-Sawarabi">【厳選５選】おすすめ英語動画サイト【独学応援】</h1>
+               <h1 class="title font-Sawarabi">【厳選５選】おすすめ英語動画サイト【独学応援】</h1>
             </div>
           </div>
 
@@ -237,7 +237,7 @@
           </div>
 
           <h2 class="artTag1">3. まとめ</h2>
-          <div class="artTag3-t">
+          <div class="artTag3-t" >
             <p>いかがだったでしょうか？</p>
             <p>ネイティブの発音はTOEICや英語教材の発音ほど綺麗でない場合はあると思います。がそれが実践です。</p>
             <p>発音を正しく覚えることは重要ですが、正しい綺麗な発音しか聞き取れないのは問題です。いつでも理想な環境が用意されているわけではないですからね。</p>

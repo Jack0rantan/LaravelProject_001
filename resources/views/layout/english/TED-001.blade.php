@@ -15,7 +15,7 @@
           <!-- Title -->
           <div class="row">
             <div class="col-12">
-               <h1 style="font-size:5vmin;" class="font-Sawarabi">【独学】TEDで英語学習！#001</h1>
+               <h1 class="title font-Sawarabi">【独学】TEDで英語学習！#001</h1>
             </div>
           </div>
 
@@ -248,8 +248,7 @@
           </div>
 
           <!-- margin -->
-          <div class="margin004 col-sm-12 row"></div>
-
+          <div class="margin004 col1-12 row"></div>
         </div>
       </div>
     </div>
