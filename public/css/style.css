@@ -212,6 +212,14 @@
   .profText {
     font-size : 14px;
   }
+  .profLogo {
+    height : auto;
+    width : 30px;
+    border-radius : 300%;
+    max-height: 400px
+  }
+  .profContact {
+  }
   .profImg {
     height : auto;
     width : 150px;
@@ -234,8 +242,6 @@
     font-size:13px;
     background:#050505;
     color:white;
-    height:150px;
-    width:100%;
     text-align:center;
     box-sizing:border-box;
   }

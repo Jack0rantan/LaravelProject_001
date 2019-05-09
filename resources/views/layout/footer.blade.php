@@ -11,17 +11,16 @@
           </div>
         </div>
 
-        <div class="margin002 col-12 row"></div>
-
-        <div class="col-12 text-center">
+      <div class="col-12 row">
+        <div class="col-sm-4">
          <a href="/about" class="text-center nav-link ">このサイトについて</a>
         </div>
 
-        <div class="col-12 text-center">
+        <div class="col-sm-4">
          <a href="/privacy" class="nav-link">プライバシーポリシー</a>
         </div>
 
-        <div class="col-12 text-center">
+        <div class="col-sm-4">
          <a href="/terms" class="nav-link">利用規約</a>
         </div>
 
