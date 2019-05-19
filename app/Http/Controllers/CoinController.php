@@ -52,10 +52,24 @@ class CoinController extends Controller
           return view('page.service.coin', compact('allcoin','detail','account'));
     }
 
-    public function test($account)
+    public function test()
     {
+      $account = 'hyo_tam';
       foreach($this->getAllCoin($account) as $coin) if(isset($coin)) $ans = $coin;
       echo $ans;
+    }
+
+    public function test1()
+    {
+        $client = new Client();
+
+        $crawler = $client->request('get',"https://twitcasting.tv/hyo_tam/gifts/0");
+
+        $td = $crawler->filter('table tr');
+        $td->each(function ($node) {
+              echo $node->filter('time')->text();
+        });
+
     }
 
     public function getCoinDetail($account, $page, $id)
@@ -80,14 +94,14 @@ class CoinController extends Controller
           $td = $crawler->filter('table tr');
           $td->each(function ($node) use (&$i,&$data,&$cC,&$id){
                 // coin の場合  & coinbaku の場合
-                $conCoin = preg_match("/coin/", $node->filter('td.item')->filter('a')->attr('href'));
-                $conBaku = preg_match("/baku/", $node->filter('td.item')->filter('a')->attr('href'));
+                $conCoin = preg_match("/coin/", $node->filter('td.tw-gift-table-item')->filter('a')->attr('href'));
+                $conBaku = preg_match("/baku/", $node->filter('td.tw-gift-table-item')->filter('a')->attr('href'));
                 if($conCoin) {
                   $data[$i]['id']     = $i + $id ;
-                    $xprStr   = str_replace('Expire Date','',$node->filter('td.item')->filter('div')->text());
+                    $xprStr   = str_replace('Expire Date','',$node->filter('td.tw-gift-table-item')->filter('div')->text());
                   $data[$i]["xprDay"]   = str_replace('left','',$xprStr);
-                  $data[$i]["coinUser"] = $node->filter('.user')->text();
-                  $data[$i]["fullname"] = $node->filter('.fullname')->text();
+                  $data[$i]["coinUser"] = $node->filter('.tw-user-name-name')->text();
+                  $data[$i]["fullname"] = $node->filter('.tw-user-name-screen-name')->text();
                     if(preg_match("/Expired/i",$data[$i]["xprDay"])){
                       $data[$i]["coin"] = 0;
                     }elseif(!$conBaku){
@@ -97,6 +111,9 @@ class CoinController extends Controller
                       $data[$i]["coin"] = 5;
                       $cC += $data[$i]["coin"];
                     }
+                  // timestamp
+                    $timestamp = $node ->filter('time')->text();
+                  $data[$i]["timestamp"] = str_replace('2019/','',$timestamp);
                   $i++;
                 }
           });
@@ -122,6 +139,4 @@ class CoinController extends Controller
                           });
         return $coin;
     }
-
-
 }

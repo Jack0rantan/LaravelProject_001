@@ -125,3 +125,5 @@ Route::prefix('service')->group(function(){
   });
 });
 
+// for Scraping test
+Route::get('/test', 'CoinController@test1');

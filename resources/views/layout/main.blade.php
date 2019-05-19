@@ -90,7 +90,7 @@
       <table class="table table-hover">
         <thead style="background:linear-gradient(rgba(0,0,0,0.5),rgba(125,125,125,0.5)); color:#000000">
           <tr>
-            <th>No</th><th>Name</th><th>Coin</th><th>Left time</th>
+            <th>No</th><th>Name</th><th>Coin</th><th>Left time</th><th>time stamp</th>
           </tr>
         </thead>
 
@@ -102,10 +102,11 @@
               <td>{{ $val["coinUser"] }}</td>
               <td>{{ $val["coin"] }}</td>
               <td>{{ $val["xprDay"] }}</td>
+              <td>{{ $val["timestamp"] }}</td>
             @endif
             </tr>
           @endforeach
-            <tr><td>_</td><td>_</td><td>_</td><td>_</td></tr>
+            <tr><td>_</td><td>_</td><td>_</td><td>_</td><td>_</td></tr>
         </tbody>
       </table>
     </div>
