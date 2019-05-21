@@ -8,6 +8,7 @@
 
 <!-- head -->
 @include ('layout.google')
+@include ('layout.adsense')
 @include ('layout.font')
 @include ('layout.head')
 

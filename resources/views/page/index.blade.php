@@ -10,7 +10,7 @@
 @include ('layout.google')
 @include ('layout.font')
 @include ('layout.head')
-
+@include ('layout.adsense')
 <!-- header -->
 <!-- nav_var -->
 @include ('layout.header')

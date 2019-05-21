@@ -7,6 +7,7 @@
 @section ('descriotion','このサイトDawnDesertにおける利用規約について記載します。')
 
 <!-- head -->
+@include ('layout.adsense')
 @include ('layout.google')
 @include ('layout.font')
 @include ('layout.head')
