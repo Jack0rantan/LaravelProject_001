@@ -7,10 +7,11 @@
 @section ('descriotion','三ヶ月のWeb開発で月10万円収益Upの実績をもとに技術内容をシェアします。')
 
 <!-- head -->
+@include ('layout.adsense')
 @include ('layout.google')
 @include ('layout.font')
 @include ('layout.head')
-@include ('layout.adsense')
+
 <!-- header -->
 <!-- nav_var -->
 @include ('layout.header')
