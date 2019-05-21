@@ -61,8 +61,10 @@
                       <a href="/english/TED-001" style="text-decoration:none; color:black;">
                         <h5 class="card-title" style="background:white; padding:20px">{{$blogOutline->title}}</h5>
                       </a>
-                        <p class="card-text">{{$blogOutline->outline}}</p>
-                        <p class="card-text"><small class="text-muted">{{$blogOutline->outline}}</small></p>
+                        <!--p class="card-text">{{$blogOutline->outline}}</p-->
+                        <p class="card-text">【独学】TEDで英語学習！#001</p>
+                        <!--p class="card-text"><small class="text-muted">{{$blogOutline->outline}}</small></p-->
+                        <p class="card-text"><small class="text-muted">Google Mapsの被災地への貢献についてです。</small></p>
                       </div>
                     </div>
                   </div>
